@@ -9,7 +9,7 @@ const ProductList = () => {
             <div className="Product">
                 <p>Lemons</p>
                 <div className="Count">
-                    <button onClick={() => updateNumberOfLemons(numberOfLemons - 1)}>-</button>
+                    <button onClick={() => updateNumberOfLemons(numberOfLemons > 0 ? numberOfLemons - 1 : 0)}>-</button>
                     <h4>{numberOfLemons}</h4>
                     <button onClick={() => updateNumberOfLemons(numberOfLemons + 1)}>+</button>
                 </div>
