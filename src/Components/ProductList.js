@@ -4,6 +4,7 @@ import './ProductList.css'
 const ProductList = () => {
     const [numberOfLemons, updateNumberOfLemons] = useState(0)
     const [amountOfSugar, updateAmountOfSugar] = useState(0)
+    const [numberOfIceCubes, updateNumberOfIceCubes] = useState(0)
 
     return (
         <div className="ProductList">
@@ -26,9 +27,9 @@ const ProductList = () => {
             <div className="Product">
                 <p>Ice Cubes</p>
                 <div className="Count">
-                    <button>+</button>
-                    <h4>0</h4>
-                    <button>-</button>
+                    <button onClick={() => updateNumberOfIceCubes(numberOfIceCubes > 0 ? numberOfIceCubes - 1 : 0)}>-</button>
+                    <h4>{numberOfIceCubes}</h4>
+                    <button onClick={() => updateNumberOfIceCubes(numberOfIceCubes + 1)}>+</button>
                 </div>
             </div>
         </div>
