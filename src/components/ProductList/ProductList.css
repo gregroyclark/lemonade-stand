@@ -1,0 +1,22 @@
+.ProductList {
+    height: 400px;
+    width: 500px;
+    background: #ccc;
+    border: 1px solid #fff;
+}
+
+.Product {
+    display: flex;
+    color: #000;
+}
+
+.Product > p {
+    width: 70%;
+}
+
+.Count {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
